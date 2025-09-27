@@ -1,0 +1,46 @@
+
+:root{
+  --bs-body-font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+.stat{padding:1rem;border-radius:.75rem;background:var(--bs-body-bg);box-shadow:0 .25rem .75rem rgba(0,0,0,.03);}
+.stat-number{font-size:1.25rem;font-weight:700;}
+.stat-label{font-size:.9rem;color:var(--bs-secondary-color);}
+
+.timeline{border-left:2px solid var(--bs-border-color);padding-left:1rem;}
+.timeline-item{margin-bottom:1.25rem;position:relative;}
+.timeline-item::before{content:"";position:absolute;left:-11px;top:.3rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--bs-primary);}
+.timeline-meta{font-size:.85rem;color:var(--bs-secondary-color);margin-bottom:.25rem;}
+
+.columns-2{columns:2;gap:1.5rem;}
+@media (max-width: 768px){.columns-2{columns:1;}}
+
+.pub-list{padding-left:1rem;}
+.pub-list li{margin-bottom:.75rem;}
+.pub-list em{font-style:italic;}
+
+.navbar .navbar-brand{letter-spacing:.2px;}
+.card .badge{margin-right:.25rem;margin-top:.25rem;}
+
+/* CTA icon buttons */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-circle i {
+  font-size: 1.75rem;
+  color: #000000;
+}
+
+.cta-icon-btn:hover .icon-circle {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.15);
+}
